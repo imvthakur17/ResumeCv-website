@@ -1,14 +1,359 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-    <h2>My website</h2>
-    <script src="assets/js/main.js"></script>
-</body>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive resume cv</title>
+    </head>
+    <body>
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav" bd-container>
+                <a href="" class="nav__logo">Vikas</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link  active-link">
+                                <i class="bx bx-home" class="nav__icon"></i>Home
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#profile" class="nav__link">
+                                <i class="bx bx-user" class="nav__icon"></i>Profile
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#education" class="nav__link">
+                                <i class="bx bx-book" class="nav__icon"></i>Education
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="bx bx-receipt" class="nav__icon"></i>Skills
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#projects" class="nav__link">
+                                <i class="bx bx-briefcase-alt" class="nav__icon"></i>Projects
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#certificates" class="nav__link">
+                                <i class="bx bx-award" class="nav__icon"></i>Certificates
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#references" class="nav__link">
+                                <i class="bx bx-link-external" class="nav__icon"></i>References
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main bd-container">
+            <!-- All elements within this div, is generated in PDF -->
+            <div class="resume" id="area-cv">
+                <div class="resume__left">
+                    <!--========== HOME ==========-->
+                    <section class="home" id="home">
+                        <div class="home__container section bd-grid">
+                            <div class="home__data bd-grid">
+                                <img src="assets/img/2.jpg" alt="" class="home__img">
+                                <h1 class="home__title"><b>VIKAS KUMAR</b></h1>
+                                <h3 class="home__profession">Frontend Web devloper</h3>
+                                <!-- Button to generate and download the pdf. Available for desktop. --> 
+                                <div>
+                                    <a download href="assets/pdf/ResumeCv.pdf" class="home__button-movil">Download</a>
+                                </div>
+                            </div>
+                            <div class="home__address bd-grid">
+                                <span class="home__information">
+                                    <i class="bx bx-map home__icon"></i>Sector 52, Noida (U.P)
+                                </span>
+                                <span class="home__information">
+                                    <i class="bx bx-envelope home__icon"></i>thakurvikas9639@gmail.com
+                                </span>
+                                <span class="home__information">
+                                    <i class="bx bx-phone home__icon"></i>+91-93xxxxx231
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Theme change button -->
+                        <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+
+                        <!-- button to download resume pdf -->
+                        <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
+                        
+                    </section>  
+
+                    <!--========== SOCIAL ==========-->
+                    <section class="social section">
+                        <h2 class="section-title">SOCIAL</h2>
+
+                        <div class="social__container bd-grid">
+                            <a href="" target="_blank" class="social__link">
+                                <i class="bx bxl-linkedin-square social__icon"></i> @vikas
+                            </a>
+                            <a href="" target="_blank" class="social__link">
+                                <i class="bx bxl-github social__icon"></i> @vikas
+                            </a>
+                            <a href="" target="_blank" class="social__link">
+                                <i class="bx bxl-instagram social__icon"></i> @vikas
+                            </a>
+                        </div>
+                    </section>
+
+                    <!--========== PROFILE ==========-->
+                    <section class="profile section" id="profile">
+                        <h2 class="section-title">PROFILE</h2>
+                        <p class="profile__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur laborum asperiores exercitationem amet obcaecati tenetur expedita! Deleniti ipsa, ex quis velit, iusto et soluta vitae modi non reprehenderit ullam asperiores.</p>
+                    </section>
+                    
+                    <!--========== EDUCATION ==========-->
+                    <section class="education section" id="education">
+                        <h2 class="section-title">Education</h2>
+                        <div class="education__container bd-grid">
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+                                </div>
+
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">BACHELOR OF TECHNOLOGY</h3>
+                                    <span class="education__year">CGPA <b>: 7.77</b></span>
+                                    <span class="education__studies">AKTU</span>
+                                    <span class="education__year">2018-22</span>
+                                </div>
+                            </div>
+
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+                                </div>
+
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">+2 INTERMEDIATE</h3>
+                                    <span class="education__year">CGPA <b>: 6.0</b></span>
+                                    <span class="education__studies">CBSE</span>
+                                    <span class="education__year">2018-22</span>
+                                </div>
+                            </div>
+
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <!-- <span class="education__line"></span> -->
+                                </div>
+
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">10th</h3>
+                                    <span class="education__year">CGPA <b>: 7.4</b></span>
+                                    <span class="education__studies">CBSE</span>
+                                    <span class="education__year">2018-22</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!--========== SKILLS  ==========-->
+                    <section class="skills section" id="skills">
+                        <h2 class="section-title">SKILLS</h2>
+                        <div class="skills__content bd-grid">
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>HTML
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>CSS
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>JavaScipt
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>PYTHON
+                                </li>
+                            </ul>
+
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>BOOTSTRAP
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>JQUERY
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>REACT JS
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                </div>
+
+                <div class="resume__right">
+                    <!--========== projects ==========-->
+                    <section class="projects section" id="projects">
+                        <h2 class="section-title">PROJECTS</h2>
+
+                        <div class="projects__container bd-grid">
+                            <div class="projects__content">
+                                <div class="projects__time">
+                                    <span class="projects__rounder"></span>
+                                    <span class="projects__line"></span>
+                                </div>
+
+                                <div class="projects__data bd-grid">
+                                    <h3 class="projects__title">PORTFOLIO WEBSITES</h3>
+                                    <span class="projects__language">HTML, CSS , JS </span>
+                                    <span class="projects__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, aliquam asperiores? Ex praesentium incidunt tempora tempore! Et esse voluptatibus molestias.</span>
+                                </div>
+                            </div>
+
+                            <div class="projects__content">
+                                <div class="projects__time">
+                                    <span class="projects__rounder"></span>
+                                    <span class="projects__line"></span>
+                                </div>
+
+                                <div class="projects__data bd-grid">
+                                    <h3 class="projects__title">ECOMMERCE WEBSITES</h3>
+                                    <span class="projects__language">HTML, CSS , JS </span>
+                                    <span class="projects__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, aliquam asperiores? Ex praesentium incidunt tempora tempore! Et esse voluptatibus molestias.</span>
+                                </div>
+                            </div>
+
+                            <div class="projects__content">
+                                <div class="projects__time">
+                                    <span class="projects__rounder"></span>
+                                    <span class="projects__line"></span>
+                                </div>
+
+                                <div class="projects__data bd-grid">
+                                    <h3 class="projects__title">CLONE LANDING PAGES</h3>
+                                    <span class="projects__language">HTML, CSS , JS </span>
+                                    <span class="projects__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, aliquam asperiores? Ex praesentium incidunt tempora tempore! Et esse voluptatibus molestias.</span>
+                                </div>
+                            </div>
+
+                            <div class="projects__content">
+                                <div class="projects__time">
+                                    <span class="projects__rounder"></span>
+                                    <!-- <span class="projects__line"></span> -->
+                                </div>
+
+                                <div class="projects__data bd-grid">
+                                    <h3 class="projects__title">CONTACT APP</h3>
+                                    <span class="projects__language">HTML, CSS, REACT JS </span>
+                                    <span class="projects__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, aliquam asperiores? Ex praesentium incidunt tempora tempore! Et esse voluptatibus molestias.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--========== CERTIFICATES ==========-->
+                    <section class="certificate section" id="certificates">
+                        <h2 class="section-title">CERTIFICATES</h2>
+
+                        <div class="certificate__container bd-grid">
+                            <div class="certificate__content">
+                                <h3 class="certificate__title">WEB DESIGNING</h3>
+                                <p class="certificate__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima dolor quia, inventore harum reprehenderit ut? Quos, sed. Incidunt, officiis earum!</p>
+                            </div>
+    
+                            <div class="certificate__content">
+                                <h3 class="certificate__title">UI/UX</h3>
+                                <p class="certificate__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima dolor quia, inventore harum reprehenderit ut? Quos, sed. Incidunt, officiis earum!</p>
+                            </div>
+    
+                            <div class="certificate__content">
+                                <h3 class="certificate__title">PYTHON BASICS</h3>
+                                <p class="certificate__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima dolor quia, inventore harum reprehenderit ut? Quos, sed. Incidunt, officiis earum!</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--========== REFERENCES ==========-->
+                    <section class="references section" id="references">
+                        
+                    </section>
+
+                    <!--========== LANGUAGES ==========-->
+                    <section class="languages section">
+                        <h2 class="section-title">LANGUAGES</h2>
+                        
+                        <div class="language__container">
+                            <ul class="language__content bd-grid">
+                                <li class="language__name">
+                                    <span class="language__circle"></span>HINDI
+                                </li>                                                       
+                                <li class="language__name">
+                                    <span class="language__circle"></span>ENGLISH
+                                </li>    
+                        </ul> 
+                        </div>
+                    </section>
+                    
+                    <!--========== INTERESTS ==========-->
+                    <section class="interests section">
+                        <h2 class="section-title">INTERESTS</h2>
+                        
+                        <div class="interests__container bd-grid">
+                            <div class="interests__content">
+                                <i class="bx bx-headphone interests__icon"></i>
+                                <span class="interests__name">Music</span>
+                            </div>
+
+                            <div class="interests__content">
+                                <i class="bx bxs-plane-alt interests__icon"></i>
+                                <span class="interests__name">Travel</span>
+                            </div>
+
+                            <div class="interests__content">
+                                <i class="bx bx-book interests__icon"></i>
+                                <span class="interests__name">Music</span>
+                            </div>
+
+                            <div class="interests__content">
+                                <i class="bx bx-bowl-hot interests__icon"></i>
+                                <span class="interests__name">Cooking</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>        
+        </main>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="" class="scrolltop" id="scroll-top">
+            <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+        </a>
+
+        <!--========== HTML2PDF ==========-->
+        <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
