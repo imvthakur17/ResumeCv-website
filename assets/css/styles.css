@@ -12,6 +12,8 @@
   --container-color: #FAFAFA;
   --container-color-alt: #F0EFEF;
   --body-color: #FCFCFC;
+  --shadow-color: white;
+  --resume--shadow:0 0 8px rgba(13, 12, 12, 15);
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
@@ -52,6 +54,8 @@ body.dark-theme{
   --container-color: #212121;
   --container-color-alt: #181616;
   --body-color: #2b2b2b;
+  --shadow-color: rgb(25, 187, 245);
+  --resume--shadow:0 5px 30px rgba(25, 187, 245);
 }
 
 /*========== Button Dark/Light ==========*/
@@ -338,6 +342,7 @@ img{
   border-radius: 50%;
   justify-self: center;
   margin-bottom: var(--mb-1);
+  box-shadow: 0 5px 30px var(--shadow-color);
 }
 
 .home__title{
@@ -570,7 +575,7 @@ img{
     display: grid;
     grid-template-columns: .5fr 1fr;
     background-color: var(--container-color);
-    box-shadow: 0 0 8px rgba(13, 12, 12, 15);
+    box-shadow: var(--resume--shadow);
   }
 
   .resume__left{
